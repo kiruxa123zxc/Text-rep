@@ -1,0 +1,25 @@
+h1{
+    color: rgb(59, 240, 171);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul{
+    color: rgb(54, 54, 104);
+list-style: none;
+text-align: center;
+}
+a{
+    text-decoration: none;
+    color: rgb(80, 133, 115);
+    font-size: larger;
+}
+div { position: fixed;
+left: 0;
+top: 0;
+width: 100%;
+background-image: url("http://webmadewell.com/wp-content/uploads/2018/01/img-bg-sample-parallax-header.jpg");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}

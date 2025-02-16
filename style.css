@@ -1,0 +1,80 @@
+h1{
+    color: rgb(59, 240, 171);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul{
+    color: rgb(54, 54, 104);
+list-style: none;  /* АНОЛОГИЧНО ТЕГУ 'a', но тут убираются всякие ненужные нм знаки перед элементами списка это может быть как нумерация так и визуальный отличительный знак в виде кружков или квадратиков  */
+text-align: center;
+}
+a{
+    text-decoration: none;  /* Убирает декорацию в у тега 'a' ну тоесть нижнее подчеркивание у слов с ссылкой */
+    color: rgb(80, 133, 115);
+    font-size: larger;
+}
+.text {
+    font-family: 'Arial', sans-serif; /* Устанавливает шрифт Arial, если он недоступен — любой sans-serif */
+    font-size: 40px; /* Размер шрифта в 40 px */
+    color: #2c3e50; /* Темно-синий цвет текста */
+    text-transform: uppercase; /* Преобразует текст в верхний регистр  короче простыми словами можно сделать буквы заглавными */
+    letter-spacing: 2px; /* Увеличивает расстояние между буквами на 2 пикселя */
+    margin: 20px 0; /* Отступ сверху и снизу 20px, слева и справа 0 */
+    padding: 5px; /* Внутренний отступ 5px со всех сторон */
+   
+    -webkit-background-clip: text; /* Обрезает фон по границам текста */
+    -webkit-text-fill-color: transparent; /* Делаем текст прозрачным, чтобы был виден градиент */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Добавляет тень вокруг текста */
+    animation: headerColor 3s infinite;   /* Параметры нашей анимации*/
+}
+   body{ background-image: url(https://i.pinimg.com/originals/39/cc/b8/39ccb89d5fa58e1aa7cbeaa60be1f149.png); /* Добавляет фоное изображение на наш сайт */
+    background-repeat: no-repeat;  /* Убирет так называемую 'плитку' у нашего фона оставляя только одно фото */ 
+    background-size: cover;  /* Масштабирует фон так дабы он был растянут на всю композицию  */ }
+
+    @keyframes headerColor {
+        0% {
+            background-color: rgb(38, 151, 151);
+        }
+        25% {
+            background-color: rgb(34, 150, 170);
+        }
+        50% {
+            background-color: #04b1b1;
+        }
+        75% {
+            background-color: rgb(38, 186, 212);
+        }
+        100% {
+            background-color: rgb(38, 151, 151);
+        } /* Создаем анимацию через keyframes и задаем параметр по каждый процент нашей длительности,допустим ставим анимацию в 5 секунд и следовательно на состояние 50% тоесть на 2,5 секунды наша анимка будет иметь сл пареметы к примеру новый цвет */
+    }
+      p{
+        border: 5px solid transparent;
+  border-image: linear-gradient(#5efff7, #0B95DD);
+  -moz-border-image: -moz-linear-gradient(#4d4f74, #0B95DD);
+  -webkit-border-image: -webkit-linear-gradient(#5d61da, #0B95DD);
+  border-image-slice: 1;
+  text-align: center;
+  font-size: x-large;
+ font-family: Arial, Helvetica, sans-serif;
+ animation: float 3s ease-out infinite;
+  }
+  /* Кидаем border и ложим на него градиент ну и даем шрифт нашему тексту */
+  @keyframes float {
+    0% {
+        transform: translateY(0);
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateY(-7px);
+        transform: translateX(-7px);
+    }
+
+    100% {
+        transform: translateY(0);
+        transform: translateX(0);
+    }
+}
+/* Анимация на перемещение слов по y вертикали */

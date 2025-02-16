@@ -49,32 +49,9 @@ a{
             background-color: rgb(38, 151, 151);
         } /* Создаем анимацию через keyframes и задаем параметр по каждый процент нашей длительности,допустим ставим анимацию в 5 секунд и следовательно на состояние 50% тоесть на 2,5 секунды наша анимка будет иметь сл пареметы к примеру новый цвет */
     }
-      p{
-        border: 5px solid transparent;
-  border-image: linear-gradient(#5efff7, #0B95DD);
-  -moz-border-image: -moz-linear-gradient(#4d4f74, #0B95DD);
-  -webkit-border-image: -webkit-linear-gradient(#5d61da, #0B95DD);
-  border-image-slice: 1;
-  text-align: center;
-  font-size: x-large;
- font-family: Arial, Helvetica, sans-serif;
- animation: float 3s ease-out infinite;
-  }
-  /* Кидаем border и ложим на него градиент ну и даем шрифт нашему тексту */
-  @keyframes float {
-    0% {
-        transform: translateY(0);
-        transform: translateX(0);
+    a:hover {
+        color: rgb(47, 107, 163);
+        text-decoration: none;
+    font-size: 20px;
+    font-family: Jazz LET, fantasy;
     }
-
-    50% {
-        transform: translateY(-7px);
-        transform: translateX(-7px);
-    }
-
-    100% {
-        transform: translateY(0);
-        transform: translateX(0);
-    }
-}
-/* Анимация на перемещение слов по y вертикали */

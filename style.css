@@ -22,7 +22,6 @@ a{
     letter-spacing: 2px; /* Увеличивает расстояние между буквами на 2 пикселя */
     margin: 20px 0; /* Отступ сверху и снизу 20px, слева и справа 0 */
     padding: 5px; /* Внутренний отступ 5px со всех сторон */
-   
     -webkit-background-clip: text; /* Обрезает фон по границам текста */
     -webkit-text-fill-color: transparent; /* Делаем текст прозрачным, чтобы был виден градиент */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Добавляет тень вокруг текста */
@@ -34,24 +33,61 @@ a{
 
     @keyframes headerColor {
         0% {
-            background-color: rgb(38, 151, 151);
+            background-color: #0c3636;
         }
         25% {
-            background-color: rgb(34, 150, 170);
+            background-color: rgb(24, 51, 102);
         }
         50% {
-            background-color: #04b1b1;
+            background-color: #070d46;
         }
         75% {
-            background-color: rgb(38, 186, 212);
+            background-color: rgb(14, 124, 143);
         }
         100% {
-            background-color: rgb(38, 151, 151);
+            background-color: #0c3636;
         } /* Создаем анимацию через keyframes и задаем параметр по каждый процент нашей длительности,допустим ставим анимацию в 5 секунд и следовательно на состояние 50% тоесть на 2,5 секунды наша анимка будет иметь сл пареметы к примеру новый цвет */
     }
     a:hover {
-        color: rgb(47, 107, 163);
+        color: rgb(87, 139, 190);
         text-decoration: none;
-    font-size: 20px;
+    font-size: 23px;
     font-family: Jazz LET, fantasy;
+    transition: 0.4s;
+    text-shadow:
+         0 0 7px #272727,
+         0 0 10px #00747c,
+         0 0 21px #7933bb,
+         0 0 42px rgb(0, 0, 0),
+         0 0 82px rgb(28, 136, 179),
+         0 0 92px rgb(0, 0, 0),
+         0 0 102px rgba(90, 209, 183, 0.966),
+         0 0 151px rgb(112, 184, 181);
     }
+    /* hover-это состояние элемента при наведение курсора на него мы накидываем text shadow или же тени и текст получает glow эффект для плавности мы ставим transiho */
+
+    a{
+        display: inline-block; 
+        font-family: sans-serif;
+        color: #333;
+        animation: distort 5s linear infinite alternate; 
+      }
+      
+      @keyframes distort {
+        0% {
+          transform: skew(0deg, 0deg) scaleX(1) scaleY(1) rotate(0deg);
+        }
+        25% {
+          transform: skew(5deg, -3deg) scaleX(0.9) scaleY(1.1) rotate(1deg); 
+        }
+        50% {
+          transform: skew(-2deg, 2deg) scaleX(1.1) scaleY(0.9) rotate(-2deg); 
+        }
+        75% {
+          transform: skew(3deg, 1deg) scaleX(0.95) scaleY(1.05) rotate(0.5deg);
+        }
+        100% {
+          transform: skew(0deg, 0deg) scaleX(1) scaleY(1) rotate(0deg);
+        }
+      }
+      /* Свойство transform в CSS позволяет применять двумерные и трёхмерные преобразования к элементам. С его помощью можно поворачивать, масштабировать, перемещать и искажать элементы.  skew это наклон по горизонтали skaley растягивает слово по y кординате,rotate поворачивает слово по */

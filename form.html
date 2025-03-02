@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Формы</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a href="index.html">BACK</a>
     <form>
         <b>Задание 1</b>
         <center>
         <p> Фамилия: <INPUT TYPE=text SIZE=30> <BR> Адрес: <INPUT TYPE=TEXT SIZE=30> </p>
-        <p> Пол: <INPUT TYPE=RADIO> М <INPUT TYPE=RADIO> Ж </p>
+        <p> Пол: <INPUT TYPE=RADIO name="product"> М <INPUT TYPE=RADIO name="product"> Ж </p>
         </form>
     </center>
         <b>Задание 2</b>
@@ -34,6 +36,72 @@
                 </SELECT>
             </form>
                 </center>
-            
+            <b>Задание 4</b>
+         <center>
+            <FORM>
+                <P> Ваши пожелания по организации сайта? </P>
+                <TEXTAREA> </TEXTAREA>
+                <INPUT TYPE=SUBMIT VALUE=«Отправить»>
+                <INPUT TYPE=RESET VALUE=«Очистить»>
+            </FORM>
+        </center>
+        
+        <center><b>Задание 5</b><form action="" style="border: 1px solid black;background-color: pink; width: fit-content">
+            <h2 style="color: red;">Анкета абитуриента</h2>
+             <p> <input type="text" size="25"> -Фамилия <br> <input type="text" size="25" style="margin-left: -35px;margin-top: 15px;"> -Имя <br> <input type="text" size="25" style="margin-top: 15px;"> -Отчество</p>
+             <p style="margin-left: -100px;"> Пол: <INPUT TYPE=RADIO name="product"> М <INPUT TYPE=RADIO name="product"> Ж </p>
+                <b>Знание иностранного языка</b><br>
+                    <INPUT TYPE=CHECKBOX style="margin-left: -5px;">  Английский <BR>
+                    <INPUT TYPE=CHECKBOX style="margin-left: -18px;">  Немецкий  <BR>
+                    <INPUT TYPE=CHECKBOX>  Французский  <BR>
+                        <INPUT TYPE=SUBMIT VALUE=Отправить style="padding: 10px;border-radius: 10px;padding-right: 50px;padding-left: 50px;margin-left: 200px;margin-top: 20px;">
+         
+        </form></center>
+        <center><b>Задание 6</b><form action="" style="border: 1px solid black;background-color: rgb(192, 255, 252);width: max-content;">
+            <h2 style="color: rgb(0, 89, 255);">Гостевая книга</h2>
+             <p> <input type="text" size="25"> -Фамилия <br> <input type="text" size="25" style="margin-left: -35px;margin-top: 15px;"> -Имя</p>
+    
+                <b>Ваши пожелания по работе фирмы</b><br>
+                <TEXTAREA rows="3" cols="40"> </TEXTAREA><br>
+                            <b>Укажите товары наиболее вам понравившиеся</b><br>
+                            <SELECT style="padding: 5px;margin-left: -200px; ">
+                                <OPTION> Принтеры
+                                <OPTION> Сканеры
+                                </SELECT><br>
+                            <INPUT TYPE=SUBMIT VALUE=Отправить style="padding: 10px;border-radius: 10px;padding-right: 50px;padding-left: 50px;margin-top: 20px;">
+                                <INPUT TYPE=RESET VALUE=Сброс style="padding: 10px;border-radius: 10px;padding-right: 50px;padding-left: 50px;margin-top: 20px;">
+        </form></center>   
+        <center><b>Задание 7</b>
+            <form action="" style="border: 1px solid black;background-color: rgb(53, 255, 114); width: max-content">
+                <h2 style="color: green">Бланк заказа</h2>
+                <div  style="display: flex;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1356/1356837.png" alt="" width="100px" height="100px">
+                    <div>
+              
+                 <p> <input type="text" size="15"> -Фамилия <br> <input type="text" size="15" style="margin-left: -15px;margin-top: 15px;"> -Адресс <br> <input type="text" size="15" style="margin-top: 15px;"> -Телефон</p>
+                    <h2 style=" color: blue;margin-left: -100px;">Наши товары</h2>
+                    <p style="margin-left: -100px;">
+                    <label><input type="checkbox"> <img src="https://cdn-icons-png.flaticon.com/512/74/74062.png" width="100px" alt=""></label>
+                    <label><input type="checkbox"> <img src="https://cdn-icons-png.flaticon.com/512/10189/10189774.png" width="100px" alt=""></label>
+                    <label><input type="checkbox"> <img src="https://cdn-icons-png.flaticon.com/512/7546/7546214.png"  width="100px"alt=""></label>
+                </p>
+                <b style=" color: blue;margin-left: -100px;">Сумма,которой вы распологаете</b>
+                <p style="margin-left: -100px;">  <INPUT TYPE=RADIO name="product"> $100<INPUT TYPE=RADIO name="product"> $500  <INPUT TYPE=RADIO name="product">$1000</p>
+
+                            <INPUT TYPE=SUBMIT VALUE=Отправить style="padding: 10px;border-radius: 10px;padding-right: 50px;padding-left: 50px;margin-top: 20px;margin-left: -100px;">
+                                <INPUT TYPE=RESET VALUE=Сброс style="padding: 10px;border-radius: 10px;padding-right: 50px;padding-left: 50px;margin-top: 20px;">
+            </form>
+        </center>    
+        <center><b>Задание 10</b><form action="" style="border: 1px solid black;background-color: rgb(255, 238, 0); width: max-content">
+            <h2 style="color: red;">Калькулятор</h2>
+            <p> <input type="text" size="15"> -Первое число <br> <input type="text" size="15" style="margin-top: 15px;"> -Второе число <br> <input type="text" size="15" style="margin-top: 15px;margin-left: -25px;"> -Результат</p>
+            <input type="button" style="padding: 10px;" value="+">
+            <input type="button" style="padding: 10px;" value="-">
+            <input type="button"  style="padding: 10px;" value="*">
+            <input type="button"  style="padding: 10px;" value="/">
+                        <INPUT TYPE=RESET VALUE=Очистить style="padding: 10px;border-radius: 10px;padding-right: 50px;padding-left: 50px;margin-top: 20px;">
+         
+        </form></center> 
+        
 </body>
 </html>

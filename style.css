@@ -29,7 +29,8 @@ a{
 }
    body{ background-image: url(https://i.pinimg.com/originals/39/cc/b8/39ccb89d5fa58e1aa7cbeaa60be1f149.png); /* Добавляет фоное изображение на наш сайт */
     background-repeat: no-repeat;  /* Убирет так называемую 'плитку' у нашего фона оставляя только одно фото */ 
-    background-size: cover;  /* Масштабирует фон так дабы он был растянут на всю композицию  */ }
+    background-size: cover;  /* Масштабирует фон так дабы он был растянут на всю композицию  */ 
+  background-attachment: fixed;}
 
     @keyframes headerColor {
         0% {
@@ -52,15 +53,14 @@ a{
         color: rgb(87, 139, 190);
         text-decoration: none;
     font-size: 23px;
-    font-family: Jazz LET, fantasy;
-    transition: 0.4s;
+    transition: 0.5s;
     text-shadow:
          0 0 7px #272727,
          0 0 10px #00747c,
          0 0 21px #7933bb,
-         0 0 42px rgb(0, 0, 0),
+         0 0 42px rgb(43, 153, 204),
          0 0 82px rgb(28, 136, 179),
-         0 0 92px rgb(0, 0, 0),
+         0 0 92px rgb(38, 148, 199),
          0 0 102px rgba(90, 209, 183, 0.966),
          0 0 151px rgb(112, 184, 181);
     }

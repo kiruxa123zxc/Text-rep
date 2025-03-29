@@ -1,4 +1,4 @@
-p{ font-style: small-caps; BACKGROUND: RED; padding-left: 18px;} 
+.p{ font-style: small-caps; BACKGROUND: RED; padding-left: 18px;} 
 
 
 .red {BACKGROUND-color: red;
@@ -6,3 +6,12 @@ p{ font-style: small-caps; BACKGROUND: RED; padding-left: 18px;}
 } 
 
 .H1 {color: red; TEXT-ALIGN: RIGHT;}
+
+i{text-align: center;
+    font-size: 70px;
+    color: blueviolet;
+    text-shadow: 3px -5px 3px rgb(63, 63, 63);}
+
+.t1{font-size: 30px;
+    margin-top: -20px;
+color: rgb(153, 100, 202);}

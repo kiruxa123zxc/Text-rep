@@ -10,8 +10,49 @@
 i{text-align: center;
     font-size: 70px;
     color: blueviolet;
-    text-shadow: 3px -5px 3px rgb(63, 63, 63);}
+    text-shadow: 3px -4px 3px rgb(63, 63, 63);}
 
 .t1{font-size: 30px;
     margin-top: -20px;
 color: rgb(153, 100, 202);}
+
+.second-initial-letter {
+    font-size: 3em;
+    line-height: 0.8em;
+    color: green;  
+  }
+  
+.zag {
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    font-size: 20px;
+  }
+  img {
+    width: 400px;
+    height: 200px;
+    border: 10px solid blue;
+  }
+  .t2{
+    font-size: 14px;
+    font-family: "Monotype Corsiva", cursive; 
+  }
+  .table {
+    border: 10px solid blue; 
+    border-collapse: collapse; 
+    width: 100%; 
+  }
+  
+  .th {
+    background-color: yellow;
+    color: red;
+    border: 3px dotted red; 
+    padding: 8px;
+    text-align: left; 
+  }
+  
+  .td {
+    background-color: green; 
+    border: 2px solid yellow; 
+    padding: 8px; 
+  }
